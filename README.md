@@ -16,14 +16,16 @@ Install `pandoc`:
 
 `pandoc` command for conversion:  
 
-    pandoc -o sample.epub -f markdown_github -t epub sample.md
+    pandoc -o book.epub -f markdown_github -t epub sample.md
 
 For multiple markdown files:  
 
-    pandoc -o output.book title.txt \
+    pandoc -o book.epub title.txt \
          chapters/chapter1.md \
          chapters/chapter2.md \
-         --epub-cover-image cover.jpg
+         --epub-cover-image cover-vertical.jpg
+
+Ideal dimensions for the cover image 2,560 x 1,600 pixels.  
 
 # From EPUB to MOBI
 
@@ -34,3 +36,4 @@ Install Calibre:
 Convert with the `ebook-convert` command:  
 
     ebook-convert "book.epub" "book.mobi"
+
