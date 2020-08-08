@@ -20,9 +20,10 @@ Install `pandoc`:
 
 For multiple markdown files:  
 
-    pandoc -o output.epub title.txt \
+    pandoc -o output.book title.txt \
          chapters/chapter1.md \
-         chapters/chapter2.md
+         chapters/chapter2.md \
+         --epub-cover-image cover.jpg
 
 # From EPUB to MOBI
 
